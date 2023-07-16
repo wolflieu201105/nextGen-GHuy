@@ -1,0 +1,21 @@
+.opening{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/intro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.opening .head-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opening .head-text .white{
+    font-family:'Times New Roman', Times, serif ;
+    color: #fff;
+}
+.opening .head-text .yellow{
+    font-family:'Times New Roman', Times, serif ;
+    color: #f7ca02;
+}
