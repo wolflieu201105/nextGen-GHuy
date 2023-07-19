@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>WELCOME TO</h1>
+        <h1>HEALTHY DIETS</h1>
+    </header>
+    <div id="login-box">
+        <h1>Đăng nhập</h1>
+        <div class="holder">
+            <span>Email:</span>
+            <input type="text" id="email" placeholder="Username">
+        </div>
+        <div class="holder">
+            <span>Password:</span>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <button id="login-btn">Login</button>
+    </div>
+    <script type="module" src="firebase/checkLoginStatus.js"></script>
+    <script type="module" src="firebase/login.js"></script>
+</body>
+    
+</html>

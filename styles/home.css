@@ -1,22 +1,38 @@
-.opening{
+.wrapper-currated-picks{
     display: grid;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/intro.jpg);
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(1, 250px);
+    gap: 1rem;
+}
+
+.wrapper-currated-picks .pick-item{
+    background-color: aqua;
     background-size: cover;
     background-position: center;
-}
-.opening .head-text{
+    border-radius: 10px;
+    padding: 1.3rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: end;
 }
-.opening .head-text .white{
-    font-family:'Times New Roman', Times, serif ;
-    color: #fff;
+
+.pick-item.best-seller {
+    background-image: url("../images/clothes.jpg");
 }
-.opening .head-text .yellow{
-    font-family:'Times New Roman', Times, serif ;
-    color: #f7ca02;
+.pick-item.shop-men {
+    background-image: url("../images/shop-men.jpg");
 }
-/* mm */
+.pick-item.shop-women {
+    background-image: url("../images/shop-women.jpg");
+}
+.pick-item.shop-casual {
+    background-image: url("../images/shop-casual.jpeg");
+}
+
+.wrapper-currated-picks .pick-item .box-inside {
+    padding: 0.8rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
