@@ -1,59 +1,61 @@
-.opening{
-    display: grid;
+.first-heading{
+    height: 30rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../images/intro.jpg);
     background-size: cover;
     background-position: center;
 }
-.opening .head-text{
+.first-heading .opening{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-heading .opening .head-text{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.opening .head-text .text{
+.first-heading .opening .head-text .text{
     font-size: 72px;
     font-weight: 400;
     line-height: 1.2em;
 }
-.opening .head-text .white{
+.first-heading .opening .head-text .white{
     font-family:'Times New Roman', Times, serif ;
     color: #fff;
 }
-.opening .head-text .yellow{
+.first-heading .opening .head-text .yellow{
     font-family:'Times New Roman', Times, serif ;
     color: #ffc222;
 }
-
-
-
-
-
-
-header{
-    height: 3.5rem;
-    background-color: rgba(0, 0, 0, 0.788);
+.first-heading .opening .button-change{
     display: flex;
-    flex-direction: row;
+    width: 70%;
+    height: 5rem;
     justify-content: space-between;
+    align-items: center;
 }
-header .header-text{
-    height: 3rem;
+.first-heading .opening .button-change .button{
+    height: 100%;
     font-size: 2rem;
-    color: #fff;
     text-decoration: none;
-}
-.welcome-text-box{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center ;
+    width: 12rem;
 }
-.welcome-text-box .white{
+.first-heading .opening .button-change .get-menu{
+    background-color: #ffc222;
+    color: #434343;
+    border-radius: 30px;
+}
+.first-heading .opening .button-change .order-food{
     color: #fff;
-}
-#Auth-btn{
-    background-color: #ffffffe0;
-    width: max-content;
-    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
+    border-radius: 30px;
 }
