@@ -8,7 +8,7 @@ const checkLoginStatus = () => {
             if (location.pathname === "/login.html" || location.pathname === "/register.html") {
                 window.location.replace("index.html")
             }
-            else if (location.pathname === "/index.html") {
+            else if (location.pathname === "/index.html" || location.pathname === "/menu.html") {
                 const AuthBtn = document.getElementById("Auth-btn");
                 AuthBtn.textContent = "Logout";
                 const welcomeText = document.getElementById("welcome-text");
@@ -17,7 +17,7 @@ const checkLoginStatus = () => {
             }
         }
         else {
-            if (location.pathname === "/index.html") {
+            if (location.pathname === "/index.html" || location.pathname === "/menu.html") {
                 const AuthBtn = document.getElementById("Auth-btn");
                 AuthBtn.textContent = "Login";
             }
