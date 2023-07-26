@@ -6,5 +6,48 @@
     align-items: center;
 }
 .first-heading .heading-text{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
     color: rgba(0, 0, 0, 0.766);
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.menu{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
+}
+.menu .choices{
+    height: 40rem;
+    margin-top: 7.5rem;
+    background-color: #fff;
+}
+.menu .choices .choice-image{
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+#sport-menu{
+    background-image: url(../images/sport\ menu.jpg);
+}
+#slimming-menu{
+    background-image: url(../images/slimming\ menu.jpg);
+}
+#office-menu{
+    background-image: url(../images/office\ menu.jpg);
+}
+#muscle-gain-menu{
+    background-image: url(../images/muscle\ gain\ menu.jpg);
+}
+#vegetarian-menu{
+    background-image: url(../images/vegetarian\ menu.jpg);
+}
+#balanced-menu{
+    background-image: url(../images/balanced\ menu.jpg);
 }
