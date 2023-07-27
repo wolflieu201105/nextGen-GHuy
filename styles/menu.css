@@ -19,19 +19,39 @@
 .menu{
     display: grid;
     width: 80%;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, auto);
-    gap: 3rem;
+    gap: 5%;
 }
 .menu .choices{
     height: 40rem;
     margin-top: 7.5rem;
     background-color: #fff;
+    border-radius: 30px;
 }
 .menu .choices .choice-image{
     height: 20rem;
     background-size: cover;
     background-position: center;
+    border-radius: 30px;
+    position: relative;
+}
+.menu .choices .choice-image .type-of-food{
+    background-color: rgb(97, 225, 11);
+    height: 40px;
+    width: 9rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px 0px;
+}
+.menu .choices .details{
+    width: 80%;
+    margin-left: 10%;
 }
 #sport-menu{
     background-image: url(../images/sport\ menu.jpg);
