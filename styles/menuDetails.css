@@ -1,0 +1,12 @@
+.first-heading{
+    height: 18rem;
+    background-image: url(../images/menu.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-heading .heading-text{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.766);
+}
