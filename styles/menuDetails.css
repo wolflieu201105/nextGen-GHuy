@@ -97,3 +97,24 @@ main{
 #paleo{
     background-image: url("../images/paleo.jpg");
 }
+#avocado{
+    background-image: url("../images/avocado.jpg");
+}
+#vegetableMix{
+    background-image: url("../images/Vegetable\ mix.jpg");
+}
+#greenSmoothie{
+    background-image: url("../images/green\ smoothie.jpg");
+}
+#salmonSet{
+    background-image: url("../images/salmon\ set.jpg");
+}
+#chickenSet{
+    background-image: url("../images/chicken\ set.jpg");
+}
+#salmonAndVegetablesSet{
+    background-image: url("../images/salmon\ and\ vegetables\ set.jpg");
+}
+#vegetableSoup{
+    background-image: url("../images/vegetable\ soup.jpg");
+}
