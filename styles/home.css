@@ -37,6 +37,7 @@
     height: 5rem;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
 }
 .first-heading .opening .button-change .button{
     height: 100%;

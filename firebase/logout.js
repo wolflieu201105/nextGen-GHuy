@@ -6,7 +6,6 @@ const logOutBtn = document.getElementById("Auth-btn");
 const handleLogOut = () => {
     signOut(auth)
         .then(() => {
-            alert('log out');
             window.location.replace('/login.html');
       })
         .catch((error) => {
