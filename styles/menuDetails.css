@@ -63,7 +63,37 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.body .meals{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 30%);
+    gap: 5%;
 }
 .bold{
     font-weight: bold;
+}
+.body .meals .mealType{
+    width: auto;
+    height: 36rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.body .meals .mealType .image{
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+}
+#breakfastToast{
+    background-image: url("../images/breakfast\ toast.jpg");
+}
+#juicyMeatWithVegetables{
+    background-image: url("../images/juicy\ meat\ with\ vegetables.jpg");
+}
+#paleo{
+    background-image: url("../images/paleo.jpg");
 }
