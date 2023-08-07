@@ -33,7 +33,7 @@ header{
 }
 .login-box .login-text{
     font-size: 2rem;
-    color: rgb(91, 211, 16);
+    color: rgb(53, 125, 9);
     position: absolute;
     top: 1rem
 }
@@ -56,7 +56,34 @@ header{
 }
 #email{
     font-size: 1rem;
+    border-radius: 0.3rem;
 }
 #password{
     font-size: 1rem;
+    border-radius: 0.3rem;
+}
+#alert-text{
+    color: red;
+    font-size: 1rem;
+    position: absolute;
+    top: 9.8rem;
+    display: none;
+}
+#login-btn{
+    background-color: rgb(153, 236, 29);
+    height: 2rem;
+    width: 4rem;
+    font-size: 1rem;
+    border-color: #249e05;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 11.5rem;
+}
+#change-register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 14rem
 }
