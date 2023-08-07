@@ -35,7 +35,7 @@ header{
     border-radius: 30px;
     position: relative;
 }
-.login-box .register-text{
+.login-box .login-text{
     font-size: 2rem;
     color: rgb(53, 125, 9);
     position: absolute;
