@@ -15,21 +15,48 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 3rem;
 }
-
-#login-box{
-    height: 350px;
-    width: 350px;
+.yellow{
+    color: #ffc222;
+}
+.login-box{
+    height: 18rem;
+    width: 23rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 229);
+    background-color: antiquewhite;
     border-radius: 30px;
+    position: relative;
 }
-
-.holder{
+.login-box .login-text{
+    font-size: 2rem;
+    color: rgb(91, 211, 16);
+    position: absolute;
+    top: 1rem
+}
+.login-box .holder{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    
+}
+.login-box .holder .text-type{
+    font-size: 1.1rem;
+}
+.email{
+    position: absolute;
+    top: 5rem;
+}
+.password{
+    position: absolute;
+    top: 8rem;
+}
+#email{
+    font-size: 1rem;
+}
+#password{
+    font-size: 1rem;
 }

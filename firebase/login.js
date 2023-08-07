@@ -9,7 +9,6 @@ const handleLogin = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
         .then((userCredential) => {
             const user = userCredential.user;
-            alert('login thanh cong');
             window.location.replace("/index.html");
         })
         .catch((error) => {

@@ -6,7 +6,7 @@ const checkLoginStatus = () => {
         if (user) {
             console.log(user.providerData[0]);
             if (location.pathname === "/login.html" || location.pathname === "/register.html") {
-                window.location.replace("index.html")
+                window.location.replace("/index.html")
             }
             else if (location.pathname === "/index.html" || location.pathname.slice(-8) === "enu.html") {
                 const AuthBtn = document.getElementById("Auth-btn");

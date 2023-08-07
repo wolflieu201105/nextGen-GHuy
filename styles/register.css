@@ -16,7 +16,9 @@ header{
     align-items: center;
     justify-content: center;
 }
-
+.heading{
+    font-size: 3rem;
+}
 #register-box{
     height: 350px;
     width: 350px;
