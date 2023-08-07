@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebase
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const registerBtn = document.getElementById("register-btn");
-const errorMessage = document.getElementById("error-message")
+const alertText = document.getElementById("alert-text");
 
 const handleRegister = () => {
     createUserWithEmailAndPassword(auth, email.value, password.value)
@@ -16,13 +16,17 @@ const handleRegister = () => {
         .catch((error) => {
             alert(error.code)
             if(error.code == 'auth/invalid-email') {
-                errorMessage.innerHTML = 'Email không hợp lệ'
+                alertText.style.display = "block";
+                alertText.innerText = 'Email không hợp lệ!';
             }else if(error.code == "auth/missing-password"){
-                errorMessage.innerHTML = "Chưa nhập mật khẩu"
+                alertText.style.display = "block";
+                alertText.innerText = "Chưa nhập mật khẩu!";
             }else if(error.code == "auth/weak-password"){
-                errorMessage.innerHTML = "Mật khẩu yếu"
+                alertText.style.display = "block";
+                alertText.innerText = "Mật khẩu yếu!";
             }else if(error.code == "auth/email-already-in-use"){
-                errorMessage.innerHTML = "email đã được sử dụng"
+                alertText.style.display = "block";
+                alertText.innerText = "Email đã được sử dụng!";
             }
         });
 }

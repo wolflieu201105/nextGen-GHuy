@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/1
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const loginBtn = document.getElementById("login-btn");
-const alertText = document.getElementById("alert-text")
+const alertText = document.getElementById("alert-text");
 
 const handleLogin = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
@@ -15,19 +15,19 @@ const handleLogin = () => {
         .catch((error) => {
             alert(error.code)
             if(error.code == "auth/invalid-email"){
-                alertText.innerText = "Invalid Email!";
+                alertText.innerText = "Email không hợp lệ!";
                 alertText.style.display = "block";
             }
             if(error.code == "auth/missing-password"){
-                alertText.innerText = "Missing Password!";
+                alertText.innerText = "Chưa nhập mật khẩu!";
                 alertText.style.display = "block";
             }
             if(error.code == "auth/user-not-found"){
-                alertText.innerText = "User not found!";
+                alertText.innerText = "Tải khoản không tồn tại!";
                 alertText.style.display = "block";
             }
             if(error.code == "auth/wrong-password"){
-                alertText.innerText = "Wrong password!";
+                alertText.innerText = "Sai mật khẩu!";
                 alertText.style.display = "block";
             }
         });

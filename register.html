@@ -9,22 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>WELCOME TO</h1>
-        <h1>HEALTHY DIETS</h1>
+        <div class="heading green">WELCOME TO</div>
+        <div class="heading yellow">HEALTHY DIETS</div>
     </header>
-    <div id="register-box">
-        <h1>Đăng ký</h1>
-        <div class="holder">
-            <span>Email:</span>
+    <div class="register-box">
+        <div class="register-text">Đăng ký</div>
+        <div class="holder email">
+            <div class="text-type">Email:</div>
             <input type="text" id="email" placeholder="Username">
         </div>
-        <div class="holder">
-            <span>Password:</span>
+        <div class="holder register">
+            <div class="text-type">Password:</div>
             <input type="password" id="password" placeholder="Password">
         </div>
+        <div id="alert-text"></div>
         <button id="register-btn">Register</button>
+        <div id="change-login"><div>Already have an account?</div><a href="login.html">&nbspLogin here</a></div>
     </div>
-    <span id="error-message"></span>
     <script type="module" src="firebase/checkLoginStatus.js"></script>
     <script type="module" src="./firebase/register.js"></script>
 </body>
