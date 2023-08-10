@@ -17,7 +17,7 @@ const checkLoginStatus = () => {
             }
         }
         else {
-            if (location.pathname === "/index.html" || location.pathname.slice(-8) === "enu.html") {
+            if (location.pathname === "/index.html" || location.pathname.slice(-8) === "enu.html" || location.pathname === "/cart.html") {
                 const AuthBtn = document.getElementById("Auth-btn");
                 AuthBtn.textContent = "Login";
             }
