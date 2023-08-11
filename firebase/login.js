@@ -10,6 +10,13 @@ const handleLogin = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
         .then((userCredential) => {
             const user = userCredential.user;
+            localStorage.clear();
+            localStorage.setItem("sportMenu", 0);
+            localStorage.setItem("balancedMenu", 0);
+            localStorage.setItem("muscleGainMenu", 0);
+            localStorage.setItem("officeMenu", 0);
+            localStorage.setItem("slimmingMenu", 0);
+            localStorage.setItem("vegetarianMenu", 0);
             window.location.replace("/index.html");
         })
         .catch((error) => {
