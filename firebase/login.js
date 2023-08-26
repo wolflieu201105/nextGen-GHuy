@@ -20,7 +20,6 @@ const handleLogin = () => {
             window.location.replace("/index.html");
         })
         .catch((error) => {
-            alert(error.code)
             if(error.code == "auth/invalid-email"){
                 alertText.innerText = "Email không hợp lệ!";
                 alertText.style.display = "block";

@@ -14,7 +14,6 @@ const handleRegister = () => {
             window.location.replace("/login.html");
         })
         .catch((error) => {
-            alert(error.code)
             if(error.code == 'auth/invalid-email') {
                 alertText.style.display = "block";
                 alertText.innerText = 'Email không hợp lệ!';
