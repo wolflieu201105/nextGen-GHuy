@@ -18,6 +18,7 @@ footer{
 .footer .left{
     width: 40%;
     margin-top: 2rem;
+    margin-right: 5%;
 }
 .footer .left .end{
     font-size: 3rem;
@@ -33,6 +34,7 @@ footer{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
 }
 .footer .right .address{
     font-size: 2rem;

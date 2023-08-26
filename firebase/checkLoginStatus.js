@@ -20,6 +20,9 @@ const checkLoginStatus = () => {
                 const AuthBtn = document.getElementById("Auth-btn");
                 AuthBtn.textContent = "Login";
             }
+            if (location.pathname.slice(-8) === "enu.html"){
+                document.getElementById("loginAlert").style.display = "block"
+            }
         }
     });
 }

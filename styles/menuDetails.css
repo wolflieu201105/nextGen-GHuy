@@ -46,6 +46,11 @@ main{
 .green{
     color: #00a149;
 }
+#loginAlert{
+    color: red;
+    font-size: 1rem;
+    display: none;
+}
 .details .cart{
     background-color: #ffe70b;
     text-align: center;
