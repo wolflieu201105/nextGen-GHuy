@@ -1,0 +1,63 @@
+footer{
+    background-color: antiquewhite;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    background-color: green;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    border-radius: 0 8rem 0 0 ;
+}
+.footer .left{
+    width: 40%;
+    margin-top: 2rem;
+}
+.footer .left .end{
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: double;
+}
+.footer .left .email{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.footer .right{
+    width: 40%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer .right .address{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.footer .right .number{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.footer .right .social-lists{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .right .social-lists .social-lists-link{
+    text-decoration: none;
+    color: goldenrod
+}
+.copyRight{
+    background-color: green;
+    width: 80%;
+    height: 9rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
