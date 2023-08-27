@@ -1,0 +1,83 @@
+.first-heading{
+    width: 100%;
+    height: 18rem;
+    background-image: url(../images/menu.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-heading .heading-text{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.766);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.value{
+    width: 100%;
+    height: 25rem;
+    background-color: #f6f6f6b7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.value .image{
+    background-image: url(../images/value.jpg);
+    height: 18rem;
+    width: 18rem;
+    background-size: cover;
+    background-position: cover;
+    border-radius: 2rem;
+}
+.value .customerValue{
+    width: 50%;
+    margin-left: 10%;
+}
+.value .customerValue .description{
+    display: flex;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.green{
+    color: green;
+}
+.benefits{
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+}
+.benefits .box{
+    width: 12rem;
+    height: 8rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    margin-left: 6rem;
+}
+.benefits .box .describe{
+    font-size: 1.5rem;
+    display: flex;
+}
+.benefits .box .describe .ben-image{
+    width: 3.4rem;
+    height: 2.4rem;
+    background-size: cover;
+    background-position: cover;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.benefits .box .des-details{
+    margin-left: 1rem;
+}
+#BH{
+    background-image: url(../images/become\ healthier.png);
+}
+#IE{
+    background-image: url(../images/increase\ energy.png);
+}
