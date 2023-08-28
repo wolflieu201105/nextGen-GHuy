@@ -23,6 +23,9 @@ const checkLoginStatus = () => {
             if (location.pathname.slice(-8) === "enu.html"){
                 document.getElementById("loginAlert").style.display = "block"
             }
+            if (location.pathname === "/cart.html"){
+                window.location.replace("/login.html")
+            }
         }
     });
 }
