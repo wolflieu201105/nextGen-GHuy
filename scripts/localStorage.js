@@ -4,5 +4,3 @@ const addItem = () => {
     item = cartItem.getAttribute("name");
     localStorage.setItem(item, Number(localStorage.getItem(item)) + 1);
 }
-
-cartItem.addEventListener('click', addItem)

@@ -37,7 +37,8 @@
             <span class="wow animate__fadeInUp heading-text" data-wow-duration="1s">CART</span>
         </section>
         <section class="item-box">
-            <div class="item" name="sportmenu">
+            <div class="item" id="sportMenu">
+                <div class="trashbin"><i class="bi bi-trash3-fill" onclick="trash(getAttribute('name'))" name="sportMenu"></i></div>
                 <div class="texts">
                     <div class="nameAndPrice">
                         <a href="sportmenu.html" class="name">Sport Menu</a>
@@ -47,11 +48,12 @@
                 </div>
                 <div class="numberChange">
                     <i class="bi bi-dash-circle changeButton"></i>
-                    <div class="number">0</div>
+                    <div class="number" id="sportMenuNumber">0</div>
                     <i class="bi bi-plus-circle changeButton"></i>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="vegetarianMenu">
+                <div class="trashbin"><i class="bi bi-trash3-fill" onclick="trash(getAttribute('name'))" name="vegetarianMenu"></i></div>
                 <div class="texts">
                     <div class="nameAndPrice">
                         <a href="vegetarianMenu.html" class="name">Vegetarian Menu</a>
@@ -61,11 +63,12 @@
                 </div>
                 <div class="numberChange">
                     <i class="bi bi-dash-circle changeButton"></i>
-                    <div class="number">0</div>
+                    <div class="number" id="vegetarianMenuNumber">0</div>
                     <i class="bi bi-plus-circle changeButton"></i>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="slimmingMenu">
+                <div class="trashbin"><i class="bi bi-trash3-fill" onclick="trash(getAttribute('name'))" name="slimmingMenu"></i></div>
                 <div class="texts">
                     <div class="nameAndPrice">
                         <a href="slimmingMenu.html" class="name">Slimming Menu</a>
@@ -75,11 +78,12 @@
                 </div>
                 <div class="numberChange">
                     <i class="bi bi-dash-circle changeButton"></i>
-                    <div class="number">0</div>
+                    <div class="number" id="slimmingMenuNumber">0</div>
                     <i class="bi bi-plus-circle changeButton"></i>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="officeMenu">
+                <div class="trashbin"><i class="bi bi-trash3-fill" onclick="trash(getAttribute('name'))" name="officeMenu"></i></div>
                 <div class="texts">
                     <div class="nameAndPrice">
                         <a href="officeMenu.html" class="name">Office Menu</a>
@@ -89,11 +93,12 @@
                 </div>
                 <div class="numberChange">
                     <i class="bi bi-dash-circle changeButton"></i>
-                    <div class="number">0</div>
+                    <div class="number" id="officeMenuNumber">0</div>
                     <i class="bi bi-plus-circle changeButton"></i>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="muscleGainMenu">
+                <div class="trashbin"><i class="bi bi-trash3-fill" onclick="trash(getAttribute('name'))" name="muscleGainMenu"></i></div>
                 <div class="texts">
                     <div class="nameAndPrice">
                         <a href="muscleGainMenu.html" class="name">Muscle Gain Menu</a>
@@ -103,22 +108,22 @@
                 </div>
                 <div class="numberChange">
                     <i class="bi bi-dash-circle changeButton"></i>
-                    <div class="number">0</div>
+                    <div class="number" id="muscleGainMenuNumber">0</div>
                     <i class="bi bi-plus-circle changeButton"></i>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="balancedMenu">
+                <div class="trashbin"><i class="bi bi-trash3-fill" onclick="trash(getAttribute('name'))" name="balancedMenu"></i></div>
                 <div class="texts">
                     <div class="nameAndPrice">
                         <a href="balancedMenu.html" class="name">Balanced Menu</a>
                         <div class="price">$19.99</div>
                     </div>
-                    <div class="descriptions">Including Vegetable soup / Juicy meat with vegetables / Paleo
-                    </div>
+                    <div class="descriptions">Including Vegetable soup / Juicy meat with vegetables / Paleo</div>
                 </div>
                 <div class="numberChange">
                     <i class="bi bi-dash-circle changeButton"></i>
-                    <div class="number">0</div>
+                    <div class="number" id="balancedMenuNumber">0</div>
                     <i class="bi bi-plus-circle changeButton"></i>
                 </div>
             </div>
@@ -156,7 +161,7 @@
     </script>
     <script type="module" src="firebase/checkLoginStatus.js"></script>
     <script type="module" src="scripts/menu.js"></script>
-    <script src="scripts/cart.js"></script>
+    <script id="checkLoginCart" src=""></script>
     <script src="firebase/logout.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

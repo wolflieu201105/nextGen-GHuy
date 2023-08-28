@@ -36,11 +36,25 @@ main{
     margin-top: 3rem;
     border: 0.1rem solid;
     border-radius: 1rem;
+    display: none;
+}
+.item-box .item .trashbin{
+    background-color: red;
+    color: #fff;
+    font-size: 2rem;
+    text-align: middle;
+    width: 2rem;
+    align-items: center;
+    position: relative;
+    border-radius: 0.9rem 0 0 0.9rem;
+    margin-right: 1rem;
+}
+.item-box .item .trashbin .bi-trash3-fill{
+    position: absolute;
+    top: 1rem;
 }
 .item-box .item .texts{
     width: 80%;
-    position: absolute;
-    left: 2%;
 }
 .item-box .item .nameAndPrice{
     display: flex;
